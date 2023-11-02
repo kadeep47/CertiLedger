@@ -1,6 +1,6 @@
 {
-	"name": "Certification Validation",
-	"description": "A blockchain verified certification service",
-	"repository": "https://github.com/thakursaurabh1998/certification-validation",
-  "keywords": ["node", "express", "react", "ethereum"]
+	"name": "CertiLedger",
+	"description": "Blockchain powered certification generation and validation system",
+	"repository": "https://github.com/kadeep47/CertiLedger",
+  "keywords": ["node", "truffle", "web3.js", "ethereum"]
 }
