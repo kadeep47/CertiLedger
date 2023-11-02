@@ -1,4 +1,8 @@
 // Allows us to use ES6 in our migrations and tests.
+// sample code--  used from Dapp university (youtube channel )
+// using sample truffle account to transact 
+
+
 require("babel-register");
 const HDWalletProvider = require("truffle-hdwallet-provider");
 require("dotenv").config();
