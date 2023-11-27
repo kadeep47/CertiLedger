@@ -37,13 +37,7 @@ contract Certification {
         }
     }
 
-    function generateCertificate(
-        string memory _id,
-        string memory _candidate_name,
-        string memory _org_name, 
-        string memory _course_name, 
-        uint256 _expiration_date,
-        string memory _ipfsLink) public {
+    function generateCertificate(string memory _id,string memory _candidate_name,string memory _org_name, string memory _course_name, uint256 _expiration_date,string memory _ipfsLink) public {
         bytes32 byte_id = stringToBytes32(_id);
         require(certificates[byte_id].expiration_date == 0, "Certificate with given id already exists");
         certificates[byte_id] = Certificate(_candidate_name, _org_name, _course_name, _expiration_date, _ipfsLink, false);
