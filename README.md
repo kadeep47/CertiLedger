@@ -1,46 +1,60 @@
 # CertiLedger
 
-# Smart Contract Variations
+# Smart Contracts
 
-This project includes multiple variations of smart contracts, each serving a specific purpose in enhancing the functionality of the blockchain-based file storage and sharing system.
+## Introduction
 
-## Simple Storage (v1)
+This project includes various smart contract variations designed to manage and interact with digital certificates on the Ethereum blockchain. Each contract serves a specific purpose, ranging from simple storage to more advanced features like IPFS integration, PDF storage, access control, and multi-signature approval.
 
-The `SimpleStorage` smart contract provides basic functionality for storing and retrieving data in a standard format. It encapsulates a straightforward struct storage mechanism.
+## Smart Contract Variations
 
-## Multisign (v2)
+### 1. Simple Storage
 
-The `Multisign` smart contract implements a more complex logic involving the mutual agreement of both involved parties. It serves the purpose of approving certificates generated after mutual consent.
+- **Description:** Basic smart contract to store and retrieve certificates in a standard format.
+- **Link:** [Simple Storage Contract](https://goerli.etherscan.io/address/0xa3812d892193dd251c78f4ab017df7a2f5cfd1f9)
 
-## IPFS Integration (v2_ipfs)
+### 2. IPFS Integration (v2_ifps)
 
-The `IPFS Integration` smart contract focuses on integrating the InterPlanetary File System (IPFS) into the blockchain. This variation enhances file storage capabilities by leveraging the decentralized and distributed nature of IPFS.
+- **Description:** Smart contract integrating IPFS for enhanced certificate management.
+- **Link:** [IPFS Integration Contract](https://goerli.etherscan.io/address/0x9b1ece76339ed92b255cf83cb277e2ab8567bdf2)
 
-## Direct PDF Storage (v4_pdf)
+### 3. Access Control (v3_lock)
 
-The `Direct PDF Storage` smart contract is designed specifically for storing complete PDF documents directly on the blockchain. This variation ensures a secure and immutable storage solution for important documents.
+- **Description:** Smart contract implementing partial and full access to digital certificates.
+- **Link:** [Access Control Contract](https://goerli.etherscan.io/address/0xecf43337515ef91bfd8739ea474b8a66146c12f0)
 
-## Access Control (v3_lock)
+### 4. PDF Direct Storage (v4_pdf)
 
-The `Access Control` smart contract implements a role-based access control system. It provides partial and full access to digital certificates based on predefined roles. This enhances security and privacy in file sharing.
+- **Description:** Smart contract directly storing complete PDFs on the blockchain.
+- **Link:** [PDF Direct Storage Contract](https://goerli.etherscan.io/address/0x9b1ece76339ed92b255cf83cb277e2ab8567bdf2#writeContract)
+  
 
-## Role-Based Access (v5_rba)
+### 5. Role-Based Access (v5_rba)
 
-The `Role-Based Access` smart contract extends access control by introducing roles such as admin, owner, and verifier. Each role has different levels of access and control over the generated PDF documents, adding granularity to the access management system.
+- **Description:** Smart contract with roles (admin, owner, verifier) for different access and control over generated PDFs.
+- **Link:** [Role-Based Access Contract](https://goerli.etherscan.io/address/0x3c90aed5a35628675067962e67de5ff1b1ed050e#code)
+
+### 6. Multi-Signature Approval (multisign)
+
+- **Description:** Smart contract requiring mutual agreement of both involved parties for certificate generation.
+- **Link:** [Multi-Signature Approval Contract](<Contract Link>)
+
+## Usage
+
+Each smart contract comes with its own set of functionalities. Refer to the specific contract documentation for details on how to interact with and utilize its features.
 
 ## Testing and Deployment
 
-To test and deploy these smart contracts, follow these steps:
+To test and deploy the smart contracts, follow these steps:
 
-1. Ensure you have a compatible Ethereum development environment set up.
-2. Navigate to the `contracts/` directory.
-3. Choose the desired smart contract variation.
-4. Compile the smart contract using [compiler-name].
-5. Deploy the compiled contract to the Ethereum blockchain.
+1. Clone the repository: `git clone [repository-url]`
+2. Navigate to the `contracts` directory.
+3. Compile the contracts using a Solidity compiler.
+4. Deploy the compiled contracts to the Ethereum network of your choice.
 
-Refer to the specific documentation in each smart contract directory for detailed instructions on testing and deployment.
 
 ## Contributing
 
-If you would like to contribute or suggest improvements to the smart contracts, please follow the contribution guidelines outlined in the main README.
+Feel free to reach out in case of any questions, doubts, or suggestions for improvements. If you have ideas to enhance the smart contracts, please don't hesitate to raise an issue.
+
 
