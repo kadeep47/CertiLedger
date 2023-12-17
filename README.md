@@ -47,7 +47,7 @@ Each smart contract comes with its own set of functionalities. Refer to the spec
 
 To test and deploy the smart contracts, follow these steps:
 
-1. Clone the repository: `git clone [repository-url]`
+1. Clone the repository: `git clone https://github.com/kadeep47/CertiLedger.git`
 2. Navigate to the `contracts` directory.
 3. Compile the contracts using a Solidity compiler.
 4. Deploy the compiled contracts to the Ethereum network of your choice.
